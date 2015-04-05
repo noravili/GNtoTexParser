@@ -1,0 +1,34 @@
+{
+    "node": true,
+    "browser": true,
+    "gcl": true,
+
+    "bitwise": false,
+    "camelcase": false,
+    "curly": false,
+    "eqeqeq": true,
+    "es3": false,
+    "freeze": true,
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "newcap": false,
+    "noarg": true,
+    "noempty": true,
+    "nonew": true,
+    "plusplus": false,
+    "quotmark": "single",
+    "undef": false,
+    "unused": false,
+    "strict": false,
+    "trailing": true,
+    "esnext": false,
+    "smarttabs": false,
+
+    "globals": {
+        "angular": true,
+        "$": true,
+        "_": true,
+        "FastClick": true
+    }
+}

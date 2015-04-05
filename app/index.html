@@ -1,0 +1,83 @@
+<!doctype html>
+<html ng-app="deiCodebreak">
+<head>
+    <meta charset="utf-8">
+    <title>DEI Codebreak</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Disallow zooming. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Allow the app to be added to the home screen on iOS devices. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- build:js js/head.js -->
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:css css/all.css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/binaryKeyboard.css">
+    <link rel="stylesheet" href="css/textView.css">
+    <link rel="stylesheet" href="css/imageView.css">
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="css/levelMenu.css">
+    <link rel="stylesheet" href="css/aboutPage.css">
+    <!-- endbuild -->
+
+    <!-- auto incremented during the build step -->
+    <meta name="version" content="{{ appVersion }}">
+</head>
+
+<body>
+<!--<body ng-controller="ampAuthorizationController">-->
+    <!-- build:js js/body.js -->
+
+	<script type="text/javascript" src="js/utils/js.js"></script>
+	<script type="text/javascript" src="js/utils/dequeue.js"></script>
+	<script type="text/javascript" src="js/utils/interval.js"></script>
+	<script type="text/javascript" src="js/utils/math.js"></script>
+	<script type="text/javascript" src="js/utils/matrix.js"></script>
+	<script type="text/javascript" src="js/utils/polynomial.js"></script>
+	<script type="text/javascript" src="js/utils/linearEquations.js"></script>
+	<script type="text/javascript" src="js/utils/interpolation.js"></script>
+	<script type="text/javascript" src="js/utils/vec.js"></script>
+	<script type="text/javascript" src="js/utils/rect.js"></script>
+	<script type="text/javascript" src="js/utils/physics.js"></script>
+	<script type="text/javascript" src="js/utils/canvas.js"></script>
+	<script type="text/javascript" src="js/utils/fps.js"></script>
+
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!--<script src="bower_components/common-web/common-web.js"></script>-->
+    <script src="bower_components/amp-access/amp-access.js"></script>
+    <script src="bower_components/amp-config/amp-config.js"></script>
+    <script src="bower_components/pro-canvas/pro-canvas.js"></script>
+    <script src="bower_components/hammerjs/hammer.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/sim-config.js"></script>
+    <script src="js/mainController.js"></script>
+
+    <script src="views/home/home.js"></script>
+
+    <!-- link all script files above this in order for build to function properly! -->
+    <!-- endbuild -->
+
+
+    <div id="mainContainer"
+		 class="unselectable"
+         ng-controller="MainController">
+
+        <home-view></home-view>
+
+    </div>
+
+</body>
+</html>

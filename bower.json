@@ -1,0 +1,16 @@
+{
+    "devDependencies": {},
+    "version": "1.1.0",
+    "name": "deiCodebreak",
+    "dependencies": {
+        "jquery": "2.1.1",
+        "angular-mocks": "1.2.25",
+        "fastclick": "1.0.3",
+        "lodash": "2.4.1",
+        "normalize-css": "3.0.1",
+        "angular": "1.2.25",
+        "common-web": "git@gitorious.poc.currdc.net:sims/common-web.git",
+        "amp-access": "git@gitorious.poc.currdc.net:prototyping/amp-access.git#1.12.1",
+        "pro-canvas": "git@gitorious.poc.currdc.net:prototyping/pro-canvas.git#0.3.1"
+    }
+}
